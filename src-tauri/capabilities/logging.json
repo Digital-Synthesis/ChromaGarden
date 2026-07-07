@@ -1,0 +1,14 @@
+{
+  "$schema": "../gen/schemas/capabilities.json",
+  "identifier": "logging",
+  "description": "Enable backend logging",
+  "platforms": ["windows"],
+  "windows": ["main"],
+  "permissions": [
+    "core:default"
+  ],
+  "log": {
+    "level": "debug",
+    "file": "tauri.log"
+  }
+}

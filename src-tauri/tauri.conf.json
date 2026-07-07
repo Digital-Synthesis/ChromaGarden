@@ -1,0 +1,50 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Chroma Garden",
+  "version": "0.1.0",
+  "identifier": "com.dss.seasonalcolorengine",
+  "mainBinaryName": "ChromaGarden",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "Digital Synthesis — Chroma Garden",
+        "width": 1200,
+        "height": 800,
+        "maximized": true,
+        "resizable": true,
+        "fullscreen": false
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": [
+      "msi"
+    ],
+    "publisher": "Digital Synthesis Studio",
+    "copyright": "Copyright © 2026",
+    "icon": [
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ]
+  },
+  "plugins": {
+    "dialog": null,
+    "fs": {
+      "requireLiteralLeadingDot": false
+    },
+    "opener": null,
+    "shell": {
+      "open": true
+    }
+  }
+}
